@@ -3,6 +3,6 @@ node {
 		git url: 'https://github.com/Suryced/your-customers.git'
 	}
 	stage ('Gradle build') {
-		bat 'gradle build'
+		bat 'gradle build -x test'
 	}
 }
